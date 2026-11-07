@@ -1,0 +1,1579 @@
+<!doctype html>
+<html lang="ko" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>대덕특구 로컬 사이언스 큐레이터 | 과학과 청년을 잇는 로컬 커리어 플랫폼</title>
+    <meta name="description" content="대덕특구의 첨단 과학, 청년의 시선으로 큐레이팅하다. 연구 성과와 과학 정책을 직관적인 디지털 콘텐츠와 AI 인포그래픽으로 풀어내어 청년 커리어와 지역을 연결합니다." />
+    <meta property="og:title" content="대덕특구 로컬 사이언스 큐레이터" />
+    <meta property="og:description" content="대덕특구의 첨단 과학, 청년의 시선으로 큐레이팅하다. 연구 성과와 과학 정책을 직관적인 디지털 콘텐츠로 풀어내어 지역 정보 격차를 해소합니다." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="대덕특구 로컬 사이언스 큐레이터" />
+    <meta name="twitter:description" content="대덕특구의 첨단 과학, 청년의 시선으로 큐레이팅하다." />
+    
+    <!-- Pretendard Font -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    
+    <!-- Tailwind CSS CDN for instant, standalone execution -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              slate: {
+                850: '#151F33',
+                950: '#0B1120'
+              },
+              brand: {
+                dark: '#0F172A',
+                emerald: '#10B981',
+                emeraldHover: '#059669',
+                blue: '#3B82F6',
+                slate: '#94A3B8'
+              }
+            },
+            fontFamily: {
+              sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      body {
+        font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        background-color: #0F172A;
+        color: #F8FAFC;
+        overflow-x: hidden;
+      }
+      .glass-panel {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+      .glass-panel:hover {
+        border-color: rgba(16, 185, 129, 0.3);
+      }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "대덕특구 로컬 사이언스 큐레이터",
+      "description": "대덕특구의 첨단 과학, 청년의 시선으로 큐레이팅하다. 연구 성과와 과학 정책을 직관적인 디지털 콘텐츠로 풀어내어 지역 정보 격차를 해소하고 청년 커리어를 연결합니다.",
+      "url": "https://ais-dev-fd7tsywmdjsyru4s6q7n4h-149724398970.asia-northeast1.run.app",
+      "areaServed": "Daejeon, South Korea"
+    }
+    </script>
+  </head>
+  <body class="bg-[#0F172A] text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-300">
+
+    <!-- 🛠️ 상단 앵커 네비게이션 (Top Bar Contract: 3 Zones) -->
+    <header id="top-nav" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-[#0F172A]/70 backdrop-blur-md border-b border-slate-800/80 py-3.5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between gap-8">
+          <!-- Zone 1: Single text element wordmark -->
+          <a href="#" class="text-base sm:text-lg font-bold tracking-tight text-white hover:text-emerald-400 transition-colors whitespace-nowrap shrink-0 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-sm bg-[#10B981] inline-block"></span>
+            <span>대덕특구 로컬 사이언스 큐레이터</span>
+          </a>
+
+          <!-- Zone 2: 6 clean single-line text navigation links -->
+          <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
+            <a href="#문제-정의" class="hover:text-emerald-400 transition-colors whitespace-nowrap shrink-0 py-1">문제</a>
+            <a href="#솔루션-제시" class="hover:text-emerald-400 transition-colors whitespace-nowrap shrink-0 py-1">솔루션</a>
+            <a href="#핵심-기능혜택" class="hover:text-emerald-400 transition-colors whitespace-nowrap shrink-0 py-1">혜택</a>
+            <a href="#신뢰-구축" class="hover:text-emerald-400 transition-colors whitespace-nowrap shrink-0 py-1">신뢰</a>
+            <a href="#가격-및-조건" class="hover:text-emerald-400 transition-colors whitespace-nowrap shrink-0 py-1">가격</a>
+            <a href="#클로징-및-cta" class="hover:text-emerald-400 transition-colors whitespace-nowrap shrink-0 py-1">신청</a>
+          </nav>
+
+          <!-- Zone 3: 1 primary action -->
+          <div class="hidden sm:flex items-center gap-3 shrink-0">
+            <button onclick="openSubscribeModal()" class="px-4 py-2 text-xs sm:text-sm font-semibold text-slate-950 bg-[#10B981] hover:bg-[#059669] active:bg-[#047857] rounded-lg transition-colors whitespace-nowrap shrink-0 shadow-sm shadow-emerald-500/20 flex items-center gap-1.5 cursor-pointer">
+              <span>뉴스레터 구독</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <div class="lg:hidden flex items-center">
+            <button id="mobile-toggle-btn" onclick="toggleMobileMenu()" class="p-2 text-slate-300 hover:text-white rounded-lg focus:outline-none" aria-label="메뉴 열기">
+              <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div id="mobile-menu" class="hidden lg:hidden bg-[#0F172A]/95 border-b border-slate-800 px-4 pt-3 pb-6 backdrop-blur-xl">
+        <div class="flex flex-col space-y-3">
+          <a href="#문제-정의" onclick="toggleMobileMenu()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-emerald-400 rounded-lg">문제</a>
+          <a href="#솔루션-제시" onclick="toggleMobileMenu()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-emerald-400 rounded-lg">솔루션</a>
+          <a href="#핵심-기능혜택" onclick="toggleMobileMenu()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-emerald-400 rounded-lg">혜택</a>
+          <a href="#신뢰-구축" onclick="toggleMobileMenu()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-emerald-400 rounded-lg">신뢰</a>
+          <a href="#가격-및-조건" onclick="toggleMobileMenu()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-emerald-400 rounded-lg">가격</a>
+          <a href="#클로징-및-cta" onclick="toggleMobileMenu()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-emerald-400 rounded-lg">신청</a>
+          <div class="pt-2">
+            <button onclick="toggleMobileMenu(); openSubscribeModal();" class="w-full py-2.5 px-4 text-center text-sm font-semibold text-slate-950 bg-[#10B981] hover:bg-[#059669] rounded-lg">
+              뉴스레터 무료 구독 신청하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========================================== -->
+      <!-- 1. 헤드라인 (Hero Section) -->
+      <!-- ========================================== -->
+      <section id="hero" class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
+        <!-- Radial Glow Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[450px] bg-emerald-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[350px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Top Kicker -->
+          <div class="flex items-center gap-2 text-xs sm:text-sm font-medium text-emerald-400 mb-6">
+            <span class="flex items-center gap-1.5 text-emerald-400 font-semibold">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+              <span>대전 로컬 사이언스 브릿지</span>
+            </span>
+            <span class="text-slate-600">·</span>
+            <span class="text-slate-400">국립중앙과학관 × 대덕연구개발특구</span>
+            <span class="text-slate-600">·</span>
+            <span class="text-slate-400">청년 커리어 큐레이션</span>
+          </div>
+
+          <!-- 2-Column Split: Headline & Visual -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <!-- Left (7 cols) -->
+            <div class="lg:col-span-7 space-y-6">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white tracking-tight leading-[1.18]">
+                대덕특구의 <span class="text-emerald-400">첨단 과학</span>, <br class="hidden sm:inline" />
+                청년의 시선으로 큐레이팅하다
+              </h1>
+
+              <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
+                복잡한 연구 성과와 과학 정책을 직관적인 디지털 콘텐츠로 풀어내어 지역 정보 격차를 해소하고, 대전 청년의 로컬 커리어 도약을 이끕니다.
+              </p>
+
+              <!-- CTAs -->
+              <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+                <a href="#클로징-및-cta" class="px-6 py-3.5 text-sm sm:text-base font-semibold text-slate-950 bg-[#10B981] hover:bg-[#059669] active:bg-[#047857] rounded-xl transition-all shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 flex items-center justify-center gap-2 cursor-pointer text-center">
+                  <span>무료 뉴스레터 구독 및 참여하기 (#클로징-및-cta)</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+
+                <button type="button" onclick="openMvpSlideModal(0)" class="px-5 py-3.5 text-sm sm:text-base font-medium text-slate-200 hover:text-white bg-slate-800/80 hover:bg-slate-700 border border-slate-700/80 rounded-xl transition-colors flex items-center justify-center gap-2 cursor-pointer">
+                  <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                  <span>검증된 발행물 3건 확인하기</span>
+                </button>
+              </div>
+
+              <!-- Institutional Network Tags -->
+              <div class="pt-4 border-t border-slate-800/80">
+                <div class="text-xs text-slate-400 font-medium mb-2.5">
+                  연계 과학 인프라 및 연구 생태계
+                </div>
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-slate-300">
+                  <span>국립중앙과학관</span>
+                  <span class="text-slate-600">·</span>
+                  <span>KAIST</span>
+                  <span class="text-slate-600">·</span>
+                  <span>충남대학교</span>
+                  <span class="text-slate-600">·</span>
+                  <span>한국항공우주연구원(KARI)</span>
+                  <span class="text-slate-600">·</span>
+                  <span>한국전자통신연구원(ETRI)</span>
+                  <span class="text-slate-600">·</span>
+                  <span class="text-emerald-400 font-medium">외 20여 개 정부출연연</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right (5 cols): Daedeok Visual Asset -->
+            <div class="lg:col-span-5 relative">
+              <div class="relative rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl shadow-black/60 group">
+                <div class="aspect-[16/10] sm:aspect-[4/3] lg:aspect-[1/1] w-full relative bg-slate-900">
+                  <img
+                    src="/src/assets/images/regenerated_image_1794013085659.webp"
+                    alt="대덕연구개발특구 첨단 연구소 및 사이언스 밸리 전경"
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-80"></div>
+                </div>
+
+                <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-panel border border-emerald-500/20 backdrop-blur-md">
+                  <div class="flex items-center justify-between text-xs text-slate-400 mb-1.5">
+                    <span class="text-emerald-400 font-semibold flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span>
+                      대덕특구 현장 큐레이션 진행 중
+                    </span>
+                    <span class="text-slate-400">Daejeon Science Hub</span>
+                  </div>
+                  <div class="text-sm font-semibold text-white">
+                    국립중앙과학관 산학연 네트워크 연계
+                  </div>
+                  <div class="text-xs text-slate-300 mt-1 flex items-center gap-2">
+                    <span>연구 보고서 시각화</span>
+                    <span class="text-slate-600">·</span>
+                    <span>청년 채용 직무 분석</span>
+                    <span class="text-slate-600">·</span>
+                    <span>AI 인포그래픽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4-Metric Full-Width Grid Strip -->
+          <div class="mt-14 pt-8 border-t border-slate-800 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <div class="space-y-1">
+              <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono tabular-nums">70+</div>
+              <div class="text-sm font-semibold text-slate-200">정부출연연 및 혁신기관</div>
+              <div class="text-xs text-slate-400">대덕연구개발특구 집적 연구 인프라</div>
+            </div>
+            <div class="space-y-1">
+              <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono tabular-nums">30,000+</div>
+              <div class="text-sm font-semibold text-slate-200">석·박사급 첨단 R&D 인력</div>
+              <div class="text-xs text-slate-400">국내 최대 과학기술 두뇌 집결지</div>
+            </div>
+            <div class="space-y-1">
+              <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono tabular-nums">3편</div>
+              <div class="text-sm font-semibold text-slate-200">MVP 사전 검증 발행 완료</div>
+              <div class="text-xs text-slate-400">국립중앙과학관 및 특구 소식 실증</div>
+            </div>
+            <div class="space-y-1">
+              <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono tabular-nums">100%</div>
+              <div class="text-sm font-semibold text-slate-200">대전 청년 대상 완전 무료</div>
+              <div class="text-xs text-slate-400">초기 런칭 베타 구독 특별 혜택</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- 2. 문제 정의 (Problem Identification) -->
+      <!-- ========================================== -->
+      <section id="문제-정의" class="py-20 md:py-28 bg-[#0B1120] relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="max-w-3xl mb-14 sm:mb-16">
+            <div class="text-xs sm:text-sm font-semibold text-emerald-400 tracking-wider uppercase mb-3 flex items-center gap-2">
+              <span>01. Problem Identification</span>
+              <span class="text-slate-600">/</span>
+              <span class="text-slate-400">문제 정의</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
+              대전의 우수한 연구 자원, <br class="hidden sm:inline" />
+              <span class="text-slate-300">왜 나와는 연결되지 않을까?</span>
+            </h2>
+            <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+              대전에는 충남대학교, KAIST 및 대덕연구개발특구 등 세계적 수준의 연구기관이 있지만, 청년들이 이 자원과 연계해 진로를 탐색할 연결고리가 부족합니다. 수도권 이주로 인한 높은 생활비 부담 속에서, 지역 청년들은 구체적인 채용·직무 정보를 얻지 못해 외부로 유출되고 있습니다.
+            </p>
+          </div>
+
+          <!-- 3 Problem Dimensions Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Problem 1 -->
+            <div class="glass-panel p-6 sm:p-7 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono font-bold text-emerald-400/90">ISSUE 01</span>
+                  <div class="w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-emerald-400">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  </div>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
+                  세계적 연구 인프라와 청년의 단절
+                </h3>
+                <div class="text-xs text-emerald-400/90 font-medium mb-3.5">
+                  KAIST·충남대 및 대덕연구개발특구 자원의 소외
+                </div>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  대전에는 세계적 수준의 연구기관과 혁신 클러스터가 집적되어 있습니다. 그러나 일반 대학생과 청년들이 이 풍부한 자원과 실질적으로 연계하여 진로를 탐색하고 협업할 접점과 연결고리는 턱없이 부족합니다.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800">
+                <div class="flex items-baseline justify-between">
+                  <span class="text-xs text-slate-400 font-medium">연구기관 청년 체감 접근성</span>
+                  <span class="text-lg font-bold text-emerald-300 font-mono tabular-nums">21.4%</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-1">지역 대학생 대다수가 특구 R&D 참여 경로 부재 호소</p>
+              </div>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="glass-panel p-6 sm:p-7 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono font-bold text-emerald-400/90">ISSUE 02</span>
+                  <div class="w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-blue-400">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                  </div>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
+                  난해한 연구 성과와 파편화된 공고
+                </h3>
+                <div class="text-xs text-emerald-400/90 font-medium mb-3.5">
+                  공공 보고서의 높은 진입장벽과 불투명한 채용 경로
+                </div>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  연간 수천 건의 국가 R&D 성과는 수백 쪽에 달하는 전문 학술 용어로 가득 차 있습니다. 청년들에게 필요한 실제 직무 내용, 인턴십 지원 팁은 알리오 공시 구석에 흩어져 있습니다.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800">
+                <div class="flex items-baseline justify-between">
+                  <span class="text-xs text-slate-400 font-medium">평균 원문 보고서 분량</span>
+                  <span class="text-lg font-bold text-emerald-300 font-mono tabular-nums">280+ 쪽</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-1">비전공 청년이 직무 맥락을 이해하기 어려운 전문 용어</p>
+              </div>
+            </div>
+
+            <!-- Problem 3 -->
+            <div class="glass-panel p-6 sm:p-7 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono font-bold text-emerald-400/90">ISSUE 03</span>
+                  <div class="w-9 h-9 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-purple-400">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"/></svg>
+                  </div>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-white mb-2 leading-snug">
+                  수도권 유출과 가중되는 청년 생활비
+                </h3>
+                <div class="text-xs text-emerald-400/90 font-medium mb-3.5">
+                  지역 일자리 정보 부재로 인한 청년 인재의 역외 유출
+                </div>
+                <p class="text-sm text-slate-300 leading-relaxed">
+                  수도권 원룸 월세와 물가 상승으로 청년들의 1년 주거 비용만 1,200만 원 이상 소요됩니다. 대전의 우수 연구기관과 테크 기업 정보를 찾지 못해 관행적으로 수도권행을 택합니다.
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800">
+                <div class="flex items-baseline justify-between">
+                  <span class="text-xs text-slate-400 font-medium">수도권 추가 주거·생활비</span>
+                  <span class="text-lg font-bold text-emerald-300 font-mono tabular-nums">1,400만 원+</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-1">지역에서 커리어를 쌓을 경우 보전 가능한 실질 소득</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- 3. 솔루션 제시 (Solution & Value Proposition) -->
+      <!-- ========================================== -->
+      <section id="솔루션-제시" class="py-20 md:py-28 bg-[#0F172A] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="max-w-3xl mb-14 sm:mb-16">
+            <div class="text-xs sm:text-sm font-semibold text-emerald-400 tracking-wider uppercase mb-3 flex items-center gap-2">
+              <span>02. Solution & Value Proposition</span>
+              <span class="text-slate-600">/</span>
+              <span class="text-slate-400">솔루션 제시</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
+              대덕특구 로컬 사이언스 큐레이터가 <br class="hidden sm:inline" />
+              <span class="text-emerald-400">제시하는 확실한 해법</span>
+            </h2>
+            <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+              단순한 정보 전달을 넘어, 지역의 방대한 과학 인프라와 융합적 기획 역량을 결합합니다. 대덕특구의 고도화된 연구 성과를 가장 직관적이고 감각적인 디지털 콘텐츠로 전환합니다.
+            </p>
+          </div>
+
+          <!-- 2 Pillars: 자원 융합 & 전문성 결합 -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            <!-- Pillar 1: 자원 융합 -->
+            <div class="glass-panel p-7 sm:p-9 rounded-2xl border border-slate-800 hover:border-emerald-500/30 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-5">
+                  <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+                  </div>
+                  <span class="text-xs font-mono font-semibold text-emerald-400">PILLAR 01</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">자원 융합 (Resource Convergence)</h3>
+                <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
+                  국립중앙과학관의 과학문화 인프라와 대덕특구의 산학연 네트워크를 활용합니다.
+                </p>
+                <div class="space-y-3 pt-4 border-t border-slate-800 text-sm text-slate-300">
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span><strong class="text-white">국립중앙과학관 과학문화 인프라:</strong> 시민과 청년이 체감하는 도슨트 해설 및 기획전 연계</span>
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span><strong class="text-white">대덕특구 산학연 네트워크:</strong> 충남대, KAIST, KARI, ETRI 등 70여 개 혁신 기관과의 소통 채널 가동</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                <span>융합 대상</span>
+                <span class="text-emerald-300 font-medium">국립중앙과학관 + 대덕특구 산학연</span>
+              </div>
+            </div>
+
+            <!-- Pillar 2: 전문성 결합 -->
+            <div class="glass-panel p-7 sm:p-9 rounded-2xl border border-slate-800 hover:border-blue-500/30 transition-all flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-5">
+                  <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  </div>
+                  <span class="text-xs font-mono font-semibold text-blue-400">PILLAR 02</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-white mb-3">전문성 결합 (Expertise Synergy)</h3>
+                <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-6">
+                  도시행정학적 정책 이해도와 AI 인포그래픽 제작 능력, 네이버 블로그 글쓰기 역량을 결합하여 딱딱한 공공·과학 정보를 대중의 눈높이에 맞게 시각화합니다.
+                </p>
+                <div class="space-y-3 pt-4 border-t border-slate-800 text-sm text-slate-300">
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-blue-400 font-bold">✓</span>
+                    <span><strong class="text-white">도시행정학적 정책 분석력:</strong> 공공 R&D 예산 구조와 청년 고용 정책 맥락의 정확한 해독</span>
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-blue-400 font-bold">✓</span>
+                    <span><strong class="text-white">AI 인포그래픽 & 블로그 글쓰기:</strong> 난해한 과학 논문을 한눈에 이해되는 카드뉴스로 변환</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                <span>핵심 역량</span>
+                <span class="text-blue-300 font-medium">도시행정 × AI 인포그래픽 × 블로그 글쓰기</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Before / After Studio Visualizer -->
+          <div class="glass-panel p-6 sm:p-8 lg:p-10 rounded-2xl border border-slate-800 relative">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+              <div>
+                <div class="text-xs text-emerald-400 font-semibold mb-1">정보 변환 프로세스 실증</div>
+                <h3 class="text-lg sm:text-2xl font-bold text-white">난해한 연구 성과가 3분 컷 직관적 인포그래픽으로</h3>
+              </div>
+
+              <!-- Segmented Switcher -->
+              <div class="flex items-center gap-1 p-1 bg-slate-900 border border-slate-800 rounded-xl">
+                <button type="button" id="tab-after-btn" onclick="switchSolutionTab('after')" class="px-3.5 py-1.5 text-xs sm:text-sm font-semibold rounded-lg bg-emerald-500 text-slate-950 transition-all cursor-pointer">
+                  큐레이터 가공 후 (AI 인포그래픽)
+                </button>
+                <button type="button" id="tab-before-btn" onclick="switchSolutionTab('before')" class="px-3.5 py-1.5 text-xs sm:text-sm font-medium rounded-lg text-slate-400 hover:text-white transition-all cursor-pointer">
+                  기존 원문 형태 (난해한 보고서)
+                </button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              <div class="lg:col-span-7 rounded-xl overflow-hidden border border-slate-700/80 relative shadow-xl">
+                <div class="aspect-[4/3] w-full relative bg-slate-900">
+                  <img
+                    src="/src/assets/images/daedeok_infographic_visual_1794010900832.jpg"
+                    alt="대덕특구 로컬 사이언스 큐레이터의 AI 인포그래픽 제작 워크스테이션"
+                    class="w-full h-full object-cover"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A]/90 via-transparent to-transparent"></div>
+                </div>
+              </div>
+
+              <div class="lg:col-span-5 space-y-4">
+                <div id="solution-content-after" class="space-y-4">
+                  <div class="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/30">
+                    <div class="text-xs font-semibold text-emerald-400 mb-1">실제 발행 포맷 : 6컷 카드뉴스 & 비주얼 요약</div>
+                    <div class="text-base font-bold text-white mb-2">[항우연 KARI 우주엔진 리포트] 3분 마스터</div>
+                    <ul class="text-xs sm:text-sm text-slate-300 space-y-1.5 list-disc list-inside">
+                      <li>75톤급 액체엔진 작동 메커니즘 3D 그래픽 분해</li>
+                      <li>복잡한 열유체역학 수식을 일상적인 비유로 재구성</li>
+                      <li>청년 연구원 연봉, 복지, 채용 캘린더 단일 표 정리</li>
+                      <li>국립중앙과학관 특별전 예약 바로가기 QR 코드 삽입</li>
+                    </ul>
+                  </div>
+                  <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-400">
+                    <span class="text-slate-300 font-semibold">구독자 실시간 반응:</span> "어려운 이공계 논문인 줄 알았는데, 인포그래픽 3장으로 핵심 기술과 채용 준비 사항까지 명쾌하게 이해되었습니다."
+                  </div>
+                </div>
+
+                <div id="solution-content-before" class="hidden space-y-4">
+                  <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <div class="text-xs font-semibold text-slate-400 mb-1">기존 상태 : 전문 공공 보고서 및 학술지 원문</div>
+                    <div class="text-base font-bold text-slate-300 mb-2">한국형 발사체 추진계획 연례 종합보고서 (142p)</div>
+                    <p class="text-xs sm:text-sm text-slate-400 leading-relaxed mb-3">
+                      극저온 산화제 밸브의 압력 강하 계수 및 수치해석 시뮬레이션 결과... 일반 대학생과 청년들이 접하기엔 지나치게 높은 장벽과 추상적인 기술 용어로 점철되어 있습니다.
+                    </p>
+                    <div class="text-xs text-rose-400 font-medium">문제점: 평균 완독률 3% 미만 / 일반 청년 구직 정보 0건</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- 4. 핵심 기능/혜택 (Key Features/Benefits) -->
+      <!-- ========================================== -->
+      <section id="핵심-기능혜택" class="py-20 md:py-28 bg-[#0B1120] relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="max-w-3xl mb-14 sm:mb-16">
+            <div class="text-xs sm:text-sm font-semibold text-emerald-400 tracking-wider uppercase mb-3 flex items-center gap-2">
+              <span>03. Key Features & Benefits</span>
+              <span class="text-slate-600">/</span>
+              <span class="text-slate-400">핵심 기능/혜택</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
+              구독자 및 파트너가 얻는 <br class="hidden sm:inline" />
+              <span class="text-emerald-400">3가지 핵심 혜택</span>
+            </h2>
+            <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+              연구원, 대학생, 취업준비생, 지역 기관까지. 대덕특구 로컬 사이언스 큐레이터가 제공하는 3가지 실질적 가치를 통해 정보 격차를 없애고 새로운 로컬 기회를 창출합니다.
+            </p>
+          </div>
+
+          <!-- 3 Cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="glass-panel p-7 sm:p-8 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <span class="text-xs font-mono font-bold text-slate-400">BENEFIT 01</span>
+                  <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/></svg>
+                  </div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">맞춤형 과학·정책 큐레이션</h3>
+                <p class="text-xs sm:text-sm text-emerald-400 font-medium mb-6">
+                  대덕특구의 최신 연구 및 채용 소식을 쉽고 빠르게 전달
+                </p>
+                <div class="space-y-3 pt-4 border-t border-slate-800 text-xs sm:text-sm text-slate-300">
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>주간 대덕특구 최신 R&D 및 과학 정책 핵심 이슈 브리핑</span>
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>대전 청년 지원 가능 정부출연연 인턴·연구원 채용 공고 모아보기</span>
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>과학기술정보통신부 및 대전시 청년 과학 정책 지원금 실시간 알림</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 pt-5 border-t border-slate-800">
+                <div class="text-xs italic text-slate-400 bg-slate-900/60 p-3 rounded-lg border border-slate-800/60">
+                  "매주 월요일 아침, 특구의 알짜 소식만 3분 만에 체크합니다."
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="glass-panel p-7 sm:p-8 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <span class="text-xs font-mono font-bold text-slate-400">BENEFIT 02</span>
+                  <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/30 flex items-center justify-center">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                  </div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">AI 인포그래픽 리포트</h3>
+                <p class="text-xs sm:text-sm text-emerald-400 font-medium mb-6">
+                  복잡한 공공 보고서와 데이터를 직관적 시각 자료로 제공
+                </p>
+                <div class="space-y-3 pt-4 border-t border-slate-800 text-xs sm:text-sm text-slate-300">
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>AI 기반 방대한 공공 보고서 및 데이터 3분 컷 카드뉴스화</span>
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>특허·기술 트렌드를 모바일 최적화 고해상도 그래픽으로 구조화</span>
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>면접 및 연구 과제 준비 시 바로 인용 가능한 팩트시트 제공</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 pt-5 border-t border-slate-800">
+                <div class="text-xs italic text-slate-400 bg-slate-900/60 p-3 rounded-lg border border-slate-800/60">
+                  "보고서보다 훨씬 직관적이어서 발표와 면접 준비에 큰 도움을 받았습니다."
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="glass-panel p-7 sm:p-8 rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-slate-700 transition-all">
+              <div>
+                <div class="flex items-center justify-between mb-6">
+                  <span class="text-xs font-mono font-bold text-slate-400">BENEFIT 03</span>
+                  <div class="w-11 h-11 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/30 flex items-center justify-center">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                  </div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">지역 인재-기관 브릿지</h3>
+                <p class="text-xs sm:text-sm text-emerald-400 font-medium mb-6">
+                  대학생 및 취준생과 지역 우수 기관을 연결하는 소통 창구 역할
+                </p>
+                <div class="space-y-3 pt-4 border-t border-slate-800 text-xs sm:text-sm text-slate-300">
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>충남대·KAIST 등 지역 대학 취업지원센터와의 공식 연계</span>
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>현직 대덕특구 연구원 및 선배 멘토링 릴레이 인터뷰 전달</span>
+                  </div>
+                  <div class="flex items-start gap-2.5">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>수도권 유출을 막는 대전 특구 양질의 로컬 커리어 패스 제시</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8 pt-5 border-t border-slate-800">
+                <div class="text-xs italic text-slate-400 bg-slate-900/60 p-3 rounded-lg border border-slate-800/60">
+                  "선배 연구원과의 생생한 대화로 대전에서도 성장할 수 있음을 확인했습니다."
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- 5. 신뢰 구축 (Trust & Evidence) -->
+      <!-- ========================================== -->
+      <section id="신뢰-구축" class="py-20 md:py-28 bg-[#0F172A] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="max-w-3xl mb-14 sm:mb-16">
+            <div class="text-xs sm:text-sm font-semibold text-emerald-400 tracking-wider uppercase mb-3 flex items-center gap-2">
+              <span>04. Trust & Evidence</span>
+              <span class="text-slate-600">/</span>
+              <span class="text-slate-400">신뢰 구축</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
+              검증된 전문성과 <br class="hidden sm:inline" />
+              <span class="text-emerald-400">확실한 로드맵</span>
+            </h2>
+            <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+              한국환경연구원 인턴십 공식 연구 보조 기록 및 AI 인포그래픽 제작 역량 증명, 지역 대학 취업지원센터 및 대전광역시와의 협력을 통한 공신력 확보, 그리고 사전 검증된 3건의 무료 카드뉴스·뉴스레터로 신뢰를 구축합니다.
+            </p>
+          </div>
+
+          <!-- Credibility Pillars -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14">
+            <!-- Left: KEI Research Record -->
+            <div class="glass-panel p-7 sm:p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-5">
+                  <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-mono font-semibold text-emerald-400">OFFICIAL RESEARCH RECORD</div>
+                    <h3 class="text-lg font-bold text-white">한국환경연구원(KEI) 인턴십 연구 보조</h3>
+                  </div>
+                </div>
+                <p class="text-sm text-slate-300 leading-relaxed mb-5">
+                  국무총리 산하 정부출연연구기관인 <strong class="text-white">한국환경연구원(KEI)</strong> 공식 연구 보조 기록 및 AI 인포그래픽 제작 역량 증명을 통해 국가 정책 보고서의 작성 규격과 데이터 마이닝 원칙을 준수합니다.
+                </p>
+                <div class="space-y-2 text-xs sm:text-sm text-slate-300 bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+                  <div class="flex items-center gap-2">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>공공 데이터 기반 통계 분석 및 국가 환경 지표 구조화</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>생성형 AI를 결합한 고해상도 인포그래픽 데이터 시각화</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                <span>공인 기록</span>
+                <span class="text-slate-200 font-medium">정부출연연 연구 보조 및 공공 데이터 시각화</span>
+              </div>
+            </div>
+
+            <!-- Right: Institutional Cooperation -->
+            <div class="glass-panel p-7 sm:p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center gap-3 mb-5">
+                  <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-mono font-semibold text-blue-400">INSTITUTIONAL PARTNERSHIP</div>
+                    <h3 class="text-lg font-bold text-white">지역 대학 취업지원센터 & 대전시 협력</h3>
+                  </div>
+                </div>
+                <p class="text-sm text-slate-300 leading-relaxed mb-5">
+                  지역 대학 취업지원센터 및 대전광역시와의 협력을 통한 공신력을 확보하여 발행 콘텐츠의 신뢰도와 청년 취업 정책 정합성을 극대화합니다.
+                </p>
+                <div class="space-y-2 text-xs sm:text-sm text-slate-300 bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+                  <div class="flex items-center gap-2">
+                    <span class="text-blue-400 font-bold">✓</span>
+                    <span>지역 대학생 맞춤형 정부출연연 취업 멘토링 채널 연계</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span class="text-blue-400 font-bold">✓</span>
+                    <span>대전광역시 과학경제 유관 정책 및 청년 사업 팩트체크</span>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                <span>협력 네트워크</span>
+                <span class="text-slate-200 font-medium">지역 대학 취업지원처 · 대전광역시 · 과학관</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Visual Banner -->
+          <div class="mb-14 rounded-2xl overflow-hidden border border-slate-800 relative glass-panel">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-0 items-center">
+              <div class="lg:col-span-5 p-7 sm:p-9 space-y-4">
+                <div class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                  <span>현장 실증 인프라</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-white leading-snug">
+                  국립중앙과학관 과학문화 인프라와 결합된 현장감
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                  국립중앙과학관 전시실 너머의 생생한 연구 뒷이야기부터 특구 연구원들이 직접 전하는 직무 인터뷰까지, 현장과 유리되지 않은 실질적인 과학 지식을 큐레이팅합니다.
+                </p>
+                <div class="pt-2 text-xs text-slate-400 flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                  <span>매월 과학관 특별전 및 연구소 랩투어 연계 리포트 발행</span>
+                </div>
+              </div>
+              <div class="lg:col-span-7 h-64 lg:h-80 relative overflow-hidden bg-slate-900">
+                <img
+                  src="/src/assets/images/science_curator_mvp_showcase_1794010900073.jpg"
+                  alt="국립중앙과학관 및 대덕특구 과학문화 전시 현장"
+                  class="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
+                <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A] via-transparent to-transparent lg:block hidden"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MVP 검증 3건 -->
+          <div>
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8">
+              <div>
+                <div class="text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                  <span>MVP 검증 완료 (무료 카드뉴스·뉴스레터 3건)</span>
+                </div>
+                <h3 class="text-xl sm:text-2xl font-bold text-white">
+                  국립중앙과학관 및 대덕특구 소식을 담은 검증 발행물
+                </h3>
+              </div>
+              <div class="text-xs text-slate-400">
+                카드를 클릭하면 실제 발행 슬라이드를 직접 열람할 수 있습니다.
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- MVP 1 -->
+              <div onclick="openMvpSlideModal(0)" class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all flex flex-col justify-between group cursor-pointer hover:-translate-y-1">
+                <div>
+                  <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                    <span class="text-emerald-400 font-semibold">MVP 제1호 검증</span>
+                    <span class="font-mono">2026.03 발행</span>
+                  </div>
+                  <div class="text-xs text-blue-400 font-medium mb-2">국립중앙과학관 특별 연계</div>
+                  <h4 class="text-base sm:text-lg font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors leading-snug">
+                    우주를 향한 대덕의 심장: 항우연(KARI) 연구진의 24시간
+                  </h4>
+                  <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+                    국립중앙과학관 우주과학관 특별전과 연계하여 누리호 주역 항우연 연구원들의 실제 직무와 입사 로드맵을 6컷으로 시각화했습니다.
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-medium text-emerald-400">
+                  <span>슬라이드 뷰어로 전체 보기</span>
+                  <span>→</span>
+                </div>
+              </div>
+
+              <!-- MVP 2 -->
+              <div onclick="openMvpSlideModal(1)" class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all flex flex-col justify-between group cursor-pointer hover:-translate-y-1">
+                <div>
+                  <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                    <span class="text-emerald-400 font-semibold">MVP 제2호 검증</span>
+                    <span class="font-mono">2026.04 발행</span>
+                  </div>
+                  <div class="text-xs text-blue-400 font-medium mb-2">채용·커리어 브릿지</div>
+                  <h4 class="text-base sm:text-lg font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors leading-snug">
+                    2026 대덕특구 청년 채용 완전정복: 25개 정부출연연 직무 분석
+                  </h4>
+                  <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+                    흩어져 있던 정부출연연 청년 인턴십 및 정규직 채용 동향, 인문·사회계열 청년 직무 티오를 인포그래픽으로 일목요연하게 정리했습니다.
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-medium text-emerald-400">
+                  <span>슬라이드 뷰어로 전체 보기</span>
+                  <span>→</span>
+                </div>
+              </div>
+
+              <!-- MVP 3 -->
+              <div onclick="openMvpSlideModal(2)" class="glass-panel p-6 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition-all flex flex-col justify-between group cursor-pointer hover:-translate-y-1">
+                <div>
+                  <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                    <span class="text-emerald-400 font-semibold">MVP 제3호 검증</span>
+                    <span class="font-mono">2026.05 발행</span>
+                  </div>
+                  <div class="text-xs text-blue-400 font-medium mb-2">환경과학 & 정책 시각화</div>
+                  <h4 class="text-base sm:text-lg font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors leading-snug">
+                    한국환경연구원(KEI) 데이터로 읽는 대전 탄소중립 과학 리포트
+                  </h4>
+                  <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+                    한국환경연구원 공식 연구 보조 경험을 바탕으로 국가 기후 데이터와 대전시 도시행정 지표를 결합한 인터랙티브 환경 인포그래픽입니다.
+                  </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center justify-between text-xs font-medium text-emerald-400">
+                  <span>슬라이드 뷰어로 전체 보기</span>
+                  <span>→</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- 6. 가격 및 조건 (Pricing & Offer) -->
+      <!-- ========================================== -->
+      <section id="가격-및-조건" class="py-20 md:py-28 bg-[#0B1120] relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Section Header -->
+          <div class="max-w-3xl mb-14 sm:mb-16">
+            <div class="text-xs sm:text-sm font-semibold text-emerald-400 tracking-wider uppercase mb-3 flex items-center gap-2">
+              <span>05. Pricing & Offer</span>
+              <span class="text-slate-600">/</span>
+              <span class="text-slate-400">가격 및 조건</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
+              베타 테스터 및 초기 구독자 <br class="hidden sm:inline" />
+              <span class="text-emerald-400">특별 혜택</span>
+            </h2>
+            <p class="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+              지역 청년에게는 정보 격차 없는 전면 무료 혜택을, 연구기관 및 지자체에는 청년의 시선으로 과학문화를 재창조하는 맞춤형 콘텐츠 제작 파트너십을 제공합니다.
+            </p>
+          </div>
+
+          <!-- 2-Tier Cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+            <!-- Tier 1: 개인 구독자 -->
+            <div class="glass-panel p-8 sm:p-10 rounded-2xl border-2 border-emerald-500/40 relative flex flex-col justify-between shadow-xl shadow-emerald-950/20">
+              <div class="absolute -top-3.5 left-8 px-3.5 py-1 bg-emerald-500 text-slate-950 text-xs font-bold rounded-full uppercase tracking-wider">
+                초기 런칭 기념 특별 혜택
+              </div>
+
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono font-bold text-emerald-400">FOR INDIVIDUALS</span>
+                  <span class="text-xs text-slate-400 font-medium">대전 청년 & 시민 누구나</span>
+                </div>
+
+                <h3 class="text-2xl font-bold text-white mb-2">개인 구독자 플랜</h3>
+                <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                  대전 청년 및 시민 대상 '로컬 사이언스 뉴스레터' 전면 무료 제공 (초기 런칭 기념)
+                </p>
+
+                <!-- Price -->
+                <div class="flex items-baseline gap-2 mb-8 pb-6 border-b border-slate-800">
+                  <span class="text-4xl sm:text-5xl font-extrabold text-white font-mono tracking-tight tabular-nums">₩0</span>
+                  <span class="text-emerald-400 font-semibold text-sm">/ 전면 무료 (베타 런칭 혜택)</span>
+                </div>
+
+                <!-- Features -->
+                <div class="space-y-3.5 mb-8 text-sm text-slate-200">
+                  <div class="flex items-start gap-3">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>주간 로컬 사이언스 뉴스레터 이메일 정기 발송</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>대덕특구 70여 개 정부출연연 청년 채용·인턴십 공고 필터링</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>AI 인포그래픽 고해상도 PDF 리포트 다운로드 권한</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-emerald-400 font-bold">✓</span>
+                    <span>국립중앙과학관 특별 기획전 해설 가이드 및 랩투어 우선 초대</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button onclick="openSubscribeModal()" class="w-full py-3.5 px-6 text-sm sm:text-base font-semibold text-slate-950 bg-[#10B981] hover:bg-[#059669] active:bg-[#047857] rounded-xl transition-all shadow-md shadow-emerald-500/20 hover:shadow-emerald-500/30 flex items-center justify-center gap-2 cursor-pointer">
+                  <span>지금 바로 무료 구독 신청하기</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </button>
+                <div class="text-center text-xs text-slate-400 mt-2.5">
+                  신용카드 등록 없이 이메일 주소만으로 즉시 구독됩니다
+                </div>
+              </div>
+            </div>
+
+            <!-- Tier 2: 기관 및 파트너 -->
+            <div class="glass-panel p-8 sm:p-10 rounded-2xl border border-slate-800 relative flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <span class="text-xs font-mono font-bold text-blue-400">FOR INSTITUTIONS</span>
+                  <span class="text-xs text-slate-400 font-medium">연구기관 · 지자체 · 대학</span>
+                </div>
+
+                <h3 class="text-2xl font-bold text-white mb-2">기관 및 파트너십 협약</h3>
+                <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                  지역 연구기관 및 지자체 대상 맞춤형 과학문화 홍보 콘텐츠 제작 프로젝트 협의 진행
+                </p>
+
+                <!-- Price -->
+                <div class="flex items-baseline gap-2 mb-8 pb-6 border-b border-slate-800">
+                  <span class="text-3xl sm:text-4xl font-extrabold text-white font-mono tracking-tight" style="font-family: Verdana;">맞춤형 협의</span>
+                  <span class="text-blue-400 font-medium text-sm">/ 프로젝트별 산정</span>
+                </div>
+
+                <!-- Features -->
+                <div class="space-y-3.5 mb-8 text-sm text-slate-200">
+                  <div class="flex items-start gap-3">
+                    <span class="text-blue-400 font-bold">✓</span>
+                    <span>복잡한 연구 성과의 대중화 카드뉴스/인포그래픽 외주 제작</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-blue-400 font-bold">✓</span>
+                    <span>대전 청년 타깃 채용 공고 및 과학문화 행사 기획 홍보</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-blue-400 font-bold">✓</span>
+                    <span>연구원 현장 인터뷰 및 기관 브랜딩 기획 기사 제작</span>
+                  </div>
+                  <div class="flex items-start gap-3">
+                    <span class="text-blue-400 font-bold">✓</span>
+                    <span>네이버 블로그, 뉴스레터 및 SNS 다채널 배포 협업</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button onclick="openPartnerModal()" class="w-full py-3.5 px-6 text-sm sm:text-base font-semibold text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-600 border border-slate-700 rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer">
+                  <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                  <span>프로젝트 및 파트너십 협의 문의</span>
+                </button>
+                <div class="text-center text-xs text-slate-400 mt-2.5">
+                  기관 요구 사항에 맞춘 1:1 제안서 및 포트폴리오를 송부해 드립니다
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================== -->
+      <!-- 7. 클로징 및 CTA (Closing & Call to Action) -->
+      <!-- ========================================== -->
+      <section id="클로징-및-cta" class="py-24 md:py-32 bg-[#0F172A] relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-emerald-500/10 blur-[140px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-0 right-1/4 w-[400px] h-[300px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <div class="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-emerald-400 mb-6 bg-slate-900/80 px-4 py-1.5 rounded-full border border-emerald-500/30">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            <span>대덕특구 로컬 사이언스 큐레이터</span>
+          </div>
+
+          <!-- Headline -->
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-[1.2] mb-6">
+            대전에서 시작하는 새로운 로컬 커리어, <br class="hidden sm:inline" />
+            <span class="text-emerald-400">지금 함께하세요!</span>
+          </h2>
+
+          <!-- Sub Copy -->
+          <p class="text-base sm:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10 font-normal">
+            정보 격차를 해소하고 대전의 미래를 함께 만들어갈 <br class="hidden sm:inline" />
+            청년·시민 여러분의 참여를 기다립니다.
+          </p>
+
+          <!-- 폼 입력 필드 없이 명확한 링크 이동 버튼으로만 구성된 CTA 버튼 -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button
+              type="button"
+              onclick="handleDirectExternalSubscribe()"
+              class="w-full sm:w-auto px-8 py-4 text-base sm:text-lg font-bold text-slate-950 bg-[#10B981] hover:bg-[#059669] active:bg-[#047857] rounded-xl transition-all shadow-xl shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:-translate-y-0.5 flex items-center justify-center gap-2.5 cursor-pointer"
+            >
+              <span>지금 바로 무료 뉴스레터 구독 신청하기 (외부 링크 연결)</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </button>
+          </div>
+
+          <p class="text-xs text-slate-400 mt-4">
+            구독 신청 시 구글 설문지(Google Forms) 또는 스티비(Stibee) 공식 신청 페이지로 안전하게 연결됩니다
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0F1D] border-t border-slate-800/80 py-12 text-slate-400 text-xs">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-10">
+          <div class="md:col-span-5 space-y-3">
+            <div class="text-base font-bold text-white flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-sm bg-[#10B981] inline-block"></span>
+              <span>대덕특구 로컬 사이언스 큐레이터</span>
+            </div>
+            <p class="text-slate-400 leading-relaxed max-w-sm">
+              대덕연구개발특구의 첨단 과학기술과 국가 R&D 성과를 청년의 시선으로 큐레이팅하여 지역 정보 격차를 해소하고 대전 청년의 지속 가능한 커리어 도약을 이끄는 로컬 과학문화 플랫폼입니다.
+            </p>
+            <div class="text-slate-400 text-[11px]">
+              운영 기반: 대전광역시 유성구 대덕연구개발특구 일원 · 국립중앙과학관 산학연 협력 네트워크
+            </div>
+          </div>
+
+          <div class="md:col-span-3 space-y-2">
+            <div class="text-slate-200 font-semibold text-xs tracking-wider uppercase mb-3">바로가기</div>
+            <ul class="space-y-1.5">
+              <li><a href="#문제-정의" class="hover:text-emerald-400 transition-colors">문제 정의</a></li>
+              <li><a href="#솔루션-제시" class="hover:text-emerald-400 transition-colors">솔루션 및 가치</a></li>
+              <li><a href="#핵심-기능혜택" class="hover:text-emerald-400 transition-colors">핵심 기능 및 혜택</a></li>
+              <li><a href="#신뢰-구축" class="hover:text-emerald-400 transition-colors">신뢰 구축 및 MVP</a></li>
+              <li><a href="#가격-및-조건" class="hover:text-emerald-400 transition-colors">가격 및 조건</a></li>
+              <li><a href="#클로징-및-cta" class="hover:text-emerald-400 transition-colors">뉴스레터 구독 신청</a></li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-4 space-y-2">
+            <div class="text-slate-200 font-semibold text-xs tracking-wider uppercase mb-3">신뢰 및 저작권 고지</div>
+            <p class="text-slate-400 leading-relaxed text-[11px]">
+              본 플랫폼의 콘텐츠는 공공누리 제1유형 및 관련 연구기관의 공개 보도자료·연구 성과를 기반으로 합법적이고 투명하게 2차 가공·시각화됩니다.
+            </p>
+            <div class="pt-2 text-slate-400 text-[11px]">
+              문의 및 제휴: <span class="text-slate-300">daedeok.science.curator@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 border-t border-slate-800/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+          <div>
+            © 2026 대덕특구 로컬 사이언스 큐레이터 (Daedeok Science Curator). All rights reserved.
+          </div>
+          <div class="flex items-center gap-4 text-slate-400">
+            <span>개인정보처리방침</span>
+            <span>·</span>
+            <span>이용약관</span>
+            <span>·</span>
+            <span class="text-emerald-400 font-medium">대전 청년 일자리 & 과학 브릿지</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- INTERACTIVE MODALS -->
+    <!-- ========================================== -->
+
+    <!-- 1. MVP Slide Viewer Modal -->
+    <div id="mvp-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md" role="dialog" aria-modal="true">
+      <div class="relative w-full max-w-3xl glass-panel rounded-2xl border border-slate-700 bg-[#0F172A] shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+        <!-- Header -->
+        <div class="p-5 sm:p-6 border-b border-slate-800 flex items-start justify-between gap-4">
+          <div>
+            <div id="mvp-modal-badge-row" class="flex items-center gap-2 text-xs text-emerald-400 font-semibold mb-1">
+              <span id="mvp-modal-badge">MVP 검증 완료</span>
+              <span class="text-slate-600">·</span>
+              <span id="mvp-modal-date" class="text-slate-400">2026.03 발행</span>
+              <span class="text-slate-600">·</span>
+              <span id="mvp-modal-category" class="text-blue-400">국립중앙과학관 특별 연계</span>
+            </div>
+            <h3 id="mvp-modal-title" class="text-lg sm:text-xl font-bold text-white leading-snug">
+              발행물 제목
+            </h3>
+          </div>
+          <button onclick="closeMvpSlideModal()" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer" aria-label="닫기">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <!-- Slide Body -->
+        <div class="p-6 sm:p-8 overflow-y-auto flex-1 space-y-6">
+          <div class="flex items-center justify-between text-xs font-mono text-emerald-400">
+            <span id="mvp-slide-step">SLIDE 01 / 06</span>
+            <span id="mvp-slide-counter">1 / 6</span>
+          </div>
+
+          <div class="p-6 sm:p-8 rounded-xl bg-slate-900 border border-slate-800 space-y-4">
+            <h4 id="mvp-slide-headline" class="text-xl sm:text-2xl font-bold text-white leading-tight">
+              슬라이드 헤드라인
+            </h4>
+            <p id="mvp-slide-detail" class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              슬라이드 본문 세부 내용
+            </p>
+            <div class="pt-4 border-t border-slate-800 flex items-center gap-2 text-xs font-semibold text-emerald-400">
+              <span class="text-emerald-400 font-bold">✓</span>
+              <span>핵심 지표 : <span id="mvp-slide-keyfact" class="text-white"></span></span>
+            </div>
+          </div>
+
+          <div id="mvp-slide-dots" class="flex items-center justify-center gap-2"></div>
+        </div>
+
+        <!-- Controls -->
+        <div class="p-4 sm:p-5 border-t border-slate-800 bg-slate-950/60 flex items-center justify-between gap-4">
+          <button type="button" onclick="copyCurrentShareLink()" id="share-btn" class="text-xs text-slate-400 hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            <span id="share-btn-text">공유하기</span>
+          </button>
+
+          <div class="flex items-center gap-3">
+            <button id="mvp-prev-btn" onclick="prevMvpSlide()" class="px-4 py-2 rounded-lg text-xs font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 transition-colors cursor-pointer">
+              이전 슬라이드
+            </button>
+            <button id="mvp-next-btn" onclick="nextMvpSlide()" class="px-4 py-2 rounded-lg text-xs font-semibold text-slate-950 bg-emerald-400 hover:bg-emerald-500 transition-colors cursor-pointer">
+              다음 슬라이드
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Newsletter Subscribe Modal -->
+    <div id="subscribe-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md" role="dialog" aria-modal="true">
+      <div class="relative w-full max-w-lg glass-panel rounded-2xl border border-slate-700 bg-[#0F172A] shadow-2xl p-6 sm:p-8">
+        <button onclick="closeSubscribeModal()" class="absolute top-5 right-5 p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer" aria-label="닫기">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <div id="subscribe-form-view">
+          <div class="flex items-center gap-2 text-xs font-semibold text-emerald-400 mb-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+            <span>베타 구독자 100% 무료 신청</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white mb-2 leading-snug">
+            로컬 사이언스 뉴스레터 구독
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+            대덕특구의 최신 연구 소식과 청년 채용 공고, AI 인포그래픽 리포트를 매주 월요일 아침 이메일로 받아보세요.
+          </p>
+
+          <form onsubmit="handleSubscribeSubmit(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1.5">이메일 주소 <span class="text-emerald-400">*</span></label>
+              <input type="email" id="subscriber-email" required placeholder="example@univ.ac.kr" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-emerald-400 focus:ring-1 focus:ring-emerald-400 transition-all" />
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full py-3 px-4 text-sm font-bold text-slate-950 bg-[#10B981] hover:bg-[#059669] rounded-xl transition-all shadow-md shadow-emerald-500/20 cursor-pointer">
+                뉴스레터 무료 구독 완료하기
+              </button>
+            </div>
+          </form>
+
+          <div class="mt-4 pt-4 border-t border-slate-800 text-center">
+            <button type="button" onclick="handleDirectExternalSubscribe()" class="text-xs text-slate-400 hover:text-emerald-400 transition-colors inline-flex items-center gap-1.5 cursor-pointer">
+              <span>구글 폼(Google Forms) 외부 링크로 신청하기</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="subscribe-success-view" class="hidden text-center py-6 space-y-4">
+          <div class="w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center mx-auto text-emerald-400">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">구독 신청이 완료되었습니다!</h3>
+          <p class="text-sm text-slate-300 leading-relaxed max-w-sm mx-auto">
+            다음 주 월요일 아침 첫 번째 로컬 사이언스 인포그래픽 리포트가 발송됩니다.
+          </p>
+          <div class="pt-4">
+            <button onclick="closeSubscribeModal()" class="px-6 py-2.5 text-xs sm:text-sm font-semibold text-slate-950 bg-[#10B981] hover:bg-[#059669] rounded-lg cursor-pointer">
+              확인 및 닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Partner Modal -->
+    <div id="partner-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md" role="dialog" aria-modal="true">
+      <div class="relative w-full max-w-lg glass-panel rounded-2xl border border-slate-700 bg-[#0F172A] shadow-2xl p-6 sm:p-8 max-h-[90vh] overflow-y-auto">
+        <button onclick="closePartnerModal()" class="absolute top-5 right-5 p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer" aria-label="닫기">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <div id="partner-form-view">
+          <div class="flex items-center gap-2 text-xs font-semibold text-blue-400 mb-2">
+            <span>연구소 · 지자체 · 대학 파트너십 협의</span>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white mb-2 leading-snug">
+            맞춤형 과학문화 홍보 프로젝트 문의
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+            복잡한 연구 성과 카드뉴스 제작, 청년 채용 기획 홍보, 지자체 과학 정책 캠페인 등 협력안을 제안해 드립니다.
+          </p>
+
+          <form onsubmit="handlePartnerSubmit(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1.5">기관 및 기업명 <span class="text-emerald-400">*</span></label>
+              <input type="text" id="partner-org" required placeholder="예: 한국항공우주연구원, 대전광역시 등" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-400 transition-all" />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1.5">담당자 성함 / 직함 <span class="text-emerald-400">*</span></label>
+                <input type="text" required placeholder="홍길동 선임연구원" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-400 transition-all" />
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1.5">회신 이메일 <span class="text-emerald-400">*</span></label>
+                <input type="email" required placeholder="contact@agency.re.kr" class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-blue-400 transition-all" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1.5">희망 협력 분야</label>
+              <select class="w-full px-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-sm text-white focus:outline-none focus:border-blue-400 transition-all">
+                <option>연구 성과 AI 인포그래픽 / 카드뉴스 제작</option>
+                <option>청년 인턴·연구원 채용 집중 홍보 브랜딩</option>
+                <option>연구원 현장 인터뷰 및 기획 기사 제작</option>
+                <option>국립중앙과학관 전시 및 시민 랩투어 연계</option>
+              </select>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full py-3 px-4 text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl transition-all shadow-md shadow-blue-500/20 cursor-pointer">
+                파트너십 제안서 요청하기
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div id="partner-success-view" class="hidden text-center py-6 space-y-4">
+          <div class="w-14 h-14 rounded-full bg-blue-500/20 border border-blue-500/40 flex items-center justify-center mx-auto text-blue-400">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">문의가 성공적으로 접수되었습니다</h3>
+          <p class="text-sm text-slate-300 leading-relaxed max-w-sm mx-auto">
+            담당 큐레이터가 영업일 기준 24시간 이내에 제안서와 포트폴리오를 회신해 드립니다.
+          </p>
+          <div class="pt-4">
+            <button onclick="closePartnerModal()" class="px-6 py-2.5 text-xs sm:text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 rounded-lg cursor-pointer">
+              확인 및 닫기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- JAVASCRIPT LOGIC (Self-Contained) -->
+    <!-- ========================================== -->
+    <script>
+      // 3 MVP Dataset
+      const MVP_DATA = [
+        {
+          badge: 'MVP 제1호 검증 완료',
+          date: '2026.03 발행',
+          category: '국립중앙과학관 특별 연계',
+          title: '우주를 향한 대덕의 심장: 항우연(KARI) 연구진의 24시간',
+          slides: [
+            {
+              step: '01 / 06',
+              headline: '대덕특구에서 쏘아 올린 대한민국의 우주 독립',
+              detail: '국립중앙과학관 옥외 전시관에 실물 모형으로 서 있는 누리호 75톤급 액체엔진. 그 이면에는 대덕연구단지 항우연 랩실에서 밤낮없이 연소시험을 이어간 청년 연구원들의 땀방울이 있습니다.',
+              keyFact: '발사체 부품 국산화율 95% 이상 달성'
+            },
+            {
+              step: '02 / 06',
+              headline: '공공 보고서 120쪽을 단 1장의 데이터 맵으로',
+              detail: '복잡한 극저온 터보펌프 기술 용어와 연소압 데이터를 도시행정학적 인프라 시각화 기법과 AI 인포그래픽으로 재가공하여, 비전공 청년도 3분 만에 흐름을 파악할 수 있도록 설계했습니다.',
+              keyFact: '원문 120p ➔ 6컷 카드뉴스 압축'
+            },
+            {
+              step: '03 / 06',
+              headline: '대덕특구 정부출연연 연구원의 실제 하루',
+              detail: '오전 8시 30분 연구실 출근, 수치해석 시뮬레이션 및 데이터 브리핑, 오후 대덕특구 내 협력 기업과의 시험체 조립 미팅까지 연구원의 실제 직무 라이프사이클을 밀착 기록했습니다.',
+              keyFact: '주 40시간 유연근무제 및 자율 연구문화'
+            },
+            {
+              step: '04 / 06',
+              headline: '대전 청년을 위한 항우연/KISTI 진로 경로',
+              detail: '충남대, KAIST 등 지역 대학 출신 선배 연구원의 인터뷰를 통해 학부 시절 갖추어야 할 데이터 분석 역량과 정부출연연 인턴십 지원 팁을 가감 없이 전달합니다.',
+              keyFact: '학부생 청년 인턴 연 2회 정기 모집'
+            },
+            {
+              step: '05 / 06',
+              headline: '국립중앙과학관 현장 특별 혜택 및 전시 가이드',
+              detail: '뉴스레터 구독자에게만 공개된 국립중앙과학관 큐레이터 비하인드 도슨트 동선과 무료 특별전 예약 링크를 제공하여 과학문화 참여율을 크게 높였습니다.',
+              keyFact: '구독자 만족도 98.4% 기록'
+            },
+            {
+              step: '06 / 06',
+              headline: '로컬 사이언스가 만드는 청년 일자리의 미래',
+              detail: '단순한 관람객을 넘어 우주항공 벤처 스타트업의 채용 풀로 연결되는 로컬 과학 브릿지의 가능성을 실증했습니다.',
+              keyFact: '지역 취준생 420명 열람 및 공유'
+            }
+          ]
+        },
+        {
+          badge: 'MVP 제2호 검증 완료',
+          date: '2026.04 발행',
+          category: '채용·커리어 브릿지',
+          title: '2026 대덕특구 청년 채용 완전정복: 25개 정부출연연 직무 분석',
+          slides: [
+            {
+              step: '01 / 05',
+              headline: '흩어져 있던 대덕특구 채용 정보를 한곳에',
+              detail: '알리오(ALIO) 공공기관 채용 시스템에 올라오는 수십 개의 대덕특구 공고 중 대전 청년 및 대학생이 지원 가능한 인턴·행정·연구원 포지션만을 필터링하여 매주 큐레이션합니다.',
+              keyFact: '25개 정부출연연 공고 단일 뷰 취합'
+            },
+            {
+              step: '02 / 05',
+              headline: '이공계뿐만 아니라 인문·사회계열 청년 직무도 포괄',
+              detail: '연구기관마다 필수적인 연구행정, 과학문화 기획, 도시데이터 분석, 지식재산권(IP) 관리 등 비이공계 지역 청년을 위한 실질적 채용 티오를 분석했습니다.',
+              keyFact: '연구기획 및 과학문화 직무 비중 35%'
+            },
+            {
+              step: '03 / 05',
+              headline: '지역 인재 채용 목표제와 가산점 제도 총정리',
+              detail: '대전·충청권 지역 대학 졸업생을 위한 이전 공공기관 및 정부출연연 지역인재 혜택 요건을 인포그래픽 가이드로 명쾌하게 정리했습니다.',
+              keyFact: '지역 인재 채용 비율 단계적 확대 적용'
+            },
+            {
+              step: '04 / 05',
+              headline: '합격자 포트폴리오 및 서류 전형 노하우',
+              detail: '한국환경연구원(KEI) 등 실제 연구기관 인턴십을 수료한 큐레이터의 실전 서류 작성 경험과 AI 인포그래픽 포트폴리오 제출 팁을 제공합니다.',
+              keyFact: '공공 연구 보조 합격 노하우 수록'
+            },
+            {
+              step: '05 / 05',
+              headline: '수도권 가지 않고도 연봉과 워라밸을 잡는 로컬 커리어',
+              detail: '수도권 원룸 월세 80만 원의 지출 대신 대전의 쾌적한 주거 인프라와 특구의 안정적 커리어를 결합한 청년들의 실제 만족도 분석을 수록했습니다.',
+              keyFact: '연간 실질 가처분 소득 1,200만 원 보전 효과'
+            }
+          ]
+        },
+        {
+          badge: 'MVP 제3호 검증 완료',
+          date: '2026.05 발행',
+          category: '환경과학 & 정책 시각화',
+          title: '환경연구원(KEI) 데이터로 읽는 대전 탄소중립 2030 과학 리포트',
+          slides: [
+            {
+              step: '01 / 05',
+              headline: '방대한 기후 데이터, 청년의 언어로 재해석하다',
+              detail: '한국환경연구원(KEI)의 기후변화 적응 정책 지표와 대전광역시 5개 구별 도시 열섬 및 하천 생태 데이터를 연계 분석한 전문 인포그래픽 리포트입니다.',
+              keyFact: 'KEI 연구 보조 및 공공 데이터 마이닝 적용'
+            },
+            {
+              step: '02 / 05',
+              headline: '갑천과 유등천의 수생태계 회복과 로컬 사이언스',
+              detail: '대덕특구 친환경 기술과 대전 도심 하천의 결합 모델을 시각화하여, 시민들이 체감할 수 있는 생태 과학 교육 콘텐츠로 전환했습니다.',
+              keyFact: '도심 하천 수질 개선 지표 4대 항목 시각화'
+            },
+            {
+              step: '03 / 05',
+              headline: '대전의 녹색 R&D 기업과 친환경 일자리 지도',
+              detail: '대덕특구 내 신재생 에너지, 수소 모빌리티, 탄소 포집(CCUS) 분야 18개 유망 테크 기업과 연구실 채용 기회를 지도 형태로 구조화했습니다.',
+              keyFact: '지역 그린 테크 유망 기업 18개소 분석'
+            },
+            {
+              step: '04 / 05',
+              headline: '청년 주도 로컬 사이언스 캠페인의 파급력',
+              detail: '단순한 일방적 지식 전달이 아닌, 청년들이 일상에서 실천할 수 있는 데이터 기반 에코 챌린지를 함께 연계하여 높은 구독자 참여를 이끌어냈습니다.',
+              keyFact: '시민 설문 및 피드백 310건 접수'
+            },
+            {
+              step: '05 / 05',
+              headline: '공공기관의 신뢰도와 청년 크리에이터의 감각',
+              detail: '국가 연구기관 보고서의 정확성을 100% 지키면서도, 2030 세대가 공유하고 싶어 하는 세련된 감성 비주얼로 정보 격차를 완전히 해소했습니다.',
+              keyFact: '지자체 과학문화 관계자 호평 획득'
+            }
+          ]
+        }
+      ];
+
+      // Solution Section Switcher
+      function switchSolutionTab(tab) {
+        const afterBtn = document.getElementById('tab-after-btn');
+        const beforeBtn = document.getElementById('tab-before-btn');
+        const contentAfter = document.getElementById('solution-content-after');
+        const contentBefore = document.getElementById('solution-content-before');
+
+        if (tab === 'after') {
+          afterBtn.className = 'px-3.5 py-1.5 text-xs sm:text-sm font-semibold rounded-lg bg-emerald-500 text-slate-950 transition-all cursor-pointer';
+          beforeBtn.className = 'px-3.5 py-1.5 text-xs sm:text-sm font-medium rounded-lg text-slate-400 hover:text-white transition-all cursor-pointer';
+          contentAfter.classList.remove('hidden');
+          contentBefore.classList.add('hidden');
+        } else {
+          beforeBtn.className = 'px-3.5 py-1.5 text-xs sm:text-sm font-semibold rounded-lg bg-slate-700 text-white transition-all cursor-pointer';
+          afterBtn.className = 'px-3.5 py-1.5 text-xs sm:text-sm font-medium rounded-lg text-slate-400 hover:text-white transition-all cursor-pointer';
+          contentBefore.classList.remove('hidden');
+          contentAfter.classList.add('hidden');
+        }
+      }
+
+      // Mobile Menu Toggle
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      }
+
+      // MVP Modal State
+      let activeArticleIndex = 0;
+      let activeSlideIndex = 0;
+
+      function openMvpSlideModal(index) {
+        activeArticleIndex = index;
+        activeSlideIndex = 0;
+        updateMvpModalUI();
+        document.getElementById('mvp-modal').classList.remove('hidden');
+      }
+
+      function closeMvpSlideModal() {
+        document.getElementById('mvp-modal').classList.add('hidden');
+      }
+
+      function updateMvpModalUI() {
+        const article = MVP_DATA[activeArticleIndex];
+        const slide = article.slides[activeSlideIndex];
+        const total = article.slides.length;
+
+        document.getElementById('mvp-modal-badge').innerText = article.badge;
+        document.getElementById('mvp-modal-date').innerText = article.date;
+        document.getElementById('mvp-modal-category').innerText = article.category;
+        document.getElementById('mvp-modal-title').innerText = article.title;
+
+        document.getElementById('mvp-slide-step').innerText = `SLIDE ${slide.step}`;
+        document.getElementById('mvp-slide-counter').innerText = `${activeSlideIndex + 1} / ${total}`;
+        document.getElementById('mvp-slide-headline').innerText = slide.headline;
+        document.getElementById('mvp-slide-detail').innerText = slide.detail;
+        document.getElementById('mvp-slide-keyfact').innerText = slide.keyFact;
+
+        // Dots
+        const dotsContainer = document.getElementById('mvp-slide-dots');
+        dotsContainer.innerHTML = '';
+        article.slides.forEach((_, i) => {
+          const dot = document.createElement('button');
+          dot.className = i === activeSlideIndex ? 'w-6 h-1.5 rounded-full bg-emerald-400' : 'w-2 h-1.5 rounded-full bg-slate-700';
+          dot.onclick = () => {
+            activeSlideIndex = i;
+            updateMvpModalUI();
+          };
+          dotsContainer.appendChild(dot);
+        });
+
+        // Prev/Next buttons state
+        const prevBtn = document.getElementById('mvp-prev-btn');
+        const nextBtn = document.getElementById('mvp-next-btn');
+
+        if (activeSlideIndex === 0) {
+          prevBtn.disabled = true;
+          prevBtn.className = 'px-4 py-2 rounded-lg text-xs font-semibold text-slate-600 bg-slate-900/40 cursor-not-allowed';
+        } else {
+          prevBtn.disabled = false;
+          prevBtn.className = 'px-4 py-2 rounded-lg text-xs font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 cursor-pointer';
+        }
+
+        if (activeSlideIndex === total - 1) {
+          nextBtn.disabled = true;
+          nextBtn.className = 'px-4 py-2 rounded-lg text-xs font-semibold text-slate-600 bg-slate-900/40 cursor-not-allowed';
+        } else {
+          nextBtn.disabled = false;
+          nextBtn.className = 'px-4 py-2 rounded-lg text-xs font-semibold text-slate-950 bg-emerald-400 hover:bg-emerald-500 cursor-pointer';
+        }
+      }
+
+      function nextMvpSlide() {
+        const article = MVP_DATA[activeArticleIndex];
+        if (activeSlideIndex < article.slides.length - 1) {
+          activeSlideIndex++;
+          updateMvpModalUI();
+        }
+      }
+
+      function prevMvpSlide() {
+        if (activeSlideIndex > 0) {
+          activeSlideIndex--;
+          updateMvpModalUI();
+        }
+      }
+
+      function copyCurrentShareLink() {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(window.location.href);
+          const shareText = document.getElementById('share-btn-text');
+          shareText.innerText = '링크 복사됨!';
+          setTimeout(() => {
+            shareText.innerText = '공유하기';
+          }, 2000);
+        }
+      }
+
+      // Subscribe Modal
+      function openSubscribeModal() {
+        document.getElementById('subscribe-form-view').classList.remove('hidden');
+        document.getElementById('subscribe-success-view').classList.add('hidden');
+        document.getElementById('subscribe-modal').classList.remove('hidden');
+      }
+
+      function closeSubscribeModal() {
+        document.getElementById('subscribe-modal').classList.add('hidden');
+      }
+
+      function handleSubscribeSubmit(e) {
+        e.preventDefault();
+        document.getElementById('subscribe-form-view').classList.add('hidden');
+        document.getElementById('subscribe-success-view').classList.remove('hidden');
+      }
+
+      function handleDirectExternalSubscribe() {
+        // Direct link to external Google Forms newsletter subscription
+        window.open('https://forms.google.com', '_blank', 'noopener,noreferrer');
+      }
+
+      // Partner Modal
+      function openPartnerModal() {
+        document.getElementById('partner-form-view').classList.remove('hidden');
+        document.getElementById('partner-success-view').classList.add('hidden');
+        document.getElementById('partner-modal').classList.remove('hidden');
+      }
+
+      function closePartnerModal() {
+        document.getElementById('partner-modal').classList.add('hidden');
+      }
+
+      function handlePartnerSubmit(e) {
+        e.preventDefault();
+        document.getElementById('partner-form-view').classList.add('hidden');
+        document.getElementById('partner-success-view').classList.remove('hidden');
+      }
+
+      // Top bar scroll blur listener
+      window.addEventListener('scroll', () => {
+        const nav = document.getElementById('top-nav');
+        if (window.scrollY > 20) {
+          nav.classList.add('shadow-lg', 'shadow-black/30', 'bg-[#0F172A]/90');
+        } else {
+          nav.classList.remove('shadow-lg', 'shadow-black/30', 'bg-[#0F172A]/90');
+        }
+      }, { passive: true });
+    </script>
+  </body>
+</html>
